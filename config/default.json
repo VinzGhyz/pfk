@@ -1,0 +1,21 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "postgres": "postgres://pfk:md5b5f5ba1a423792b526f799ae4eb3d59e@localhost:5432/pushforkite",
+  "public": "../public/",
+  "auth": {
+    "idField": "id",
+    "token": {
+      "secret": "YcrDjLnbb3ZRGlahOWGW+e17U1VCVcnxMZw3MyPRyGJ25Xk0xlJaGW9cvtlss+ecqPg7NvMeKRMFGWTGlAT0vw=="
+    },
+    "local": {},
+    "facebook": {
+      "clientID": "650173011806473",
+      "clientSecret": "c3e3960539577b41809ec733bb11f564",
+      "permissions": {
+        "scope": ["public_profile","email"]
+      }
+    }
+  },
+  "corsWhitelist": ["https://app.forestadmin.com"]
+}

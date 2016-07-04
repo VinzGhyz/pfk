@@ -1,0 +1,94 @@
+#next_session{
+	padding: 10px;
+	border: 1px solid #ddd;
+	background-color: #d1d1d1;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+
+#forecast{
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+table{
+	width: 100%;
+	/*background-color:red;*/
+}
+
+tr:first-child{
+	font-weight: bold;
+}
+tr td:first-child {
+	text-align: left;
+}
+
+tr td{
+	margin-right: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+#wind_direction{
+	/*background-color: danger;*/
+	/*height: 500px;*/
+}
+
+.infobulle {
+	position: relative;  /* les .infobulle deviennent référents */
+	cursor: help;
+	border-radius: 50px;
+	min-width: 5px;
+	width: 20px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* on génère un élément :after lors du survol et du focus :*/
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+	content: attr(aria-label);  /* on affiche aria-label */
+	position: absolute;
+	top: -1em;
+	/*left: 50%;*/
+	transform: translateX(-105%); /* on centre horizontalement  */
+	z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+	white-space: nowrap;  /* on interdit le retour à la ligne */
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 8px;
+	border-radius: 3px;
+	color: #fff;
+}
+.infobulle.green:hover::after,
+.infobulle.green:focus::after{
+	background-color: #4bba41;
+}
+
+.infobulle.red:hover::after,
+.infobulle.red:focus::after{
+	background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.green{
+	background-color: #4bba41;
+}
+
+.red{
+	background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.infobulle{
+	border-radius: 50px;
+	min-width: 5px;
+	width: 20px;
+	/*max-height: 6px;*/
+/*	padding-top: 1px;
+	padding-bottom: 1px;*/
+	padding-left: 7px;
+	padding-right: 7px;
+}

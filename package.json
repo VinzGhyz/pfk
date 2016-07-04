@@ -1,0 +1,52 @@
+{
+  "name": "PushForKite",
+  "description": "An app that helps you get started kitesurfing by giving you the nearest kiteable spot!",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src/",
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "repository": {},
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "test": "npm run jshint && npm run mocha",
+    "jshint": "jshint src/. test/. --config",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "feathers": "^2.0.1",
+    "feathers-authentication": "^0.7.9",
+    "feathers-configuration": "^0.2.3",
+    "feathers-errors": "^2.2.0",
+    "feathers-hooks": "^1.5.4",
+    "feathers-rest": "^1.4.2",
+    "feathers-sequelize": "^1.2.0",
+    "feathers-socketio": "^1.4.1",
+    "forest-express-sequelize": "^0.2.18",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-facebook-token": "^3.3.0",
+    "pg": "^6.0.1",
+    "pg-hstore": "^2.3.2",
+    "scrape-it": "^3.1.1",
+    "sequelize": "^3.23.4",
+    "serve-favicon": "^2.3.0",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3",
+    "request": "^2.72.0"
+  }
+}
