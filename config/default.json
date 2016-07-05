@@ -17,5 +17,9 @@
       }
     }
   },
+  "forest": {
+    "secretKey": "your_forest_secret_key",
+    "authKey": "C@ts0nK3yb0@rd"
+  },
   "corsWhitelist": ["https://app.forestadmin.com"]
 }
