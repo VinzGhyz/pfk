@@ -16,5 +16,9 @@
         "scope": ["public_profile","email"]
       }
     }
+  },
+  "forest": {
+    "secretKey": "your_forest_secret_key",
+    "authKey": "C@ts0nK3yb0@rd"
   }
 }

@@ -37,12 +37,12 @@ app.use(compress())
   .configure(rest())
   .configure(socketio())
   .configure(services)
-  .configure(middleware)
-  .use('/forest/', require('forest-express-sequelize').init({
+  .use(require('forest-express-sequelize').init({
     modelsDir: __dirname + '/services',
-    secretKey: '31b69ee4f245bfb60811ebbf979ca524cfc639535fb8b7322e28d0c997e52115',
-    authKey: 'pII02u(ak2Bxw00l',
+    secretKey: app.get('forest').secretKey,
+    authKey: app.get('forest').authKey,
     sequelize: app.get('sequelize')
-  }));
+  }))
+  .configure(middleware);
 
 module.exports = app;
